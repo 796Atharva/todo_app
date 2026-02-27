@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #559cd2, #15e6e6);
+}
+/* App container */
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  color: #333;
+}
+
+/* Main card */
+.container {
+  width: 100%;
+  max-width: 520px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #4a6cf7;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Toggle */
+.dark-toggle {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.dark-toggle button {
+  background: #eef2ff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Input */
+.input-section {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 9px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Add button */
+.add-btn {
+  background: linear-gradient(135deg, #4a6cf7, #6a8cff);
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 2px;
+  padding: 6px;
+  border: none;
+  background: #eef2ff;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #4a6cf7;
+  font-weight: 500;
+}
+
+.filters button.active {
+  background: #4a6cf7;
+  color: white;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9faff;
+  border: 1px solid #e6ebff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+li:hover {
+  background: #eef2ff;
+}
+
+li.dragging {
+  background: #e0e7ff;
+}
+
+li.done .task-text {
+  text-decoration: line-through;
+  color: #999;
+}
+
+li.overdue {
+  border-left: 4px solid #ff4d4f;
+  background: #fff1f1;
+}
+
+/* Drag handle */
+.drag-handle {
+  cursor: grab;
+  font-size: 18px;
+  color: #888;
+}
+
+/* Checkbox */
+.check-btn {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #aaa;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.check-btn.checked {
+  background: #4a6cf7;
+  color: white;
+  border-color: #4a6cf7;
+}
+
+/* Content */
+.task-content {
+  flex: 1;
+}
+
+.task-text {
+  font-size: 14px;
+}
+
+.task-due {
+  font-size: 11px;
+  color: #666;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+.actions button {
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background: #eef2ff;
+  color: #4a6cf7;
+}
+
+.actions button:hover {
+  background: #dbe2ff;
+}
+
+.actions .delete {
+  background: #ffeaea;
+  color: #ff4d4f;
+}
+
+.actions .delete:hover {
+  background: #ffd6d6;
+}
+
+/* Empty */
+.empty {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
